@@ -15,11 +15,12 @@ a:hover {
     --secondary-color: #E5D9FF;
     --second-secondary-color: #B694FF;
   }
-.nav-title{
+.indie-flower{
     font-family: 'Indie Flower', cursive;
+}
+.nav-title{
     color: white;
     text-decoration: none;
-
 }
 .nav-title:hover{
     text-decoration: none;
