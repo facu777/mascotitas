@@ -78,10 +78,10 @@
     <!-- fin navbar -->
 
     <main class="container">
-        <!-- Carrusel -->
-        <div class="row mt-4 mb-4">
-            <div class="col-4 m-0 p-0">
-                <div id="carouselExampleControls" class="carousel slide size-100" data-bs-ride="carousel">
+        <div class="row mt-lg-4 m-sm-1 mb-4">
+            <div class="col-6 col-xxl-4 col-xl-4 col-lg-4 col-md-12 col-sm-10 m-0 p-0">
+              <!-- Carrusel -->
+                <div id="carouselExampleControls" class="carousel slide carrusel" data-bs-ride="carousel">
                     <div class="carousel-inner">
                       <div class="carousel-item active">
                         <img class="size-100 borde" src="../../assets/Luna.jpeg" class="d-block w-100" alt="Imágen de un gato">
@@ -107,42 +107,29 @@
             <div class="col">
                 <!-- Mascota perdida -->
                   <div class="row">
-                      <div class="col-12"><h1>Mascota perdida</h1></div>
-                    </div>
-                    <div class="row">
+                      <div class="col-6 col-sm-12"><h1>Mascota perdida</h1></div>
                       <div class="col-12"><p>Encontrada el día dd/mm/aaaa</p></div>
                     </div>
+                    <!-- Datos de contacto -->
                     <div class="row">
                       <div class="col-12"><h2 class="mt-2">Datos de contacto</h2></div>
-                    </div>
-                    <div class="row">
-                      <div class="col-6"><p><span class="fw-bold">Nombre: </span> Javier Irungaray</p></div>
-                      <div class="col-6"><img class="imagen" src="../../assets/telefono.png" alt="Icono de teléfono"><span>45123678</span></div>
-                  </div>
-                  <div class="row">
-                    <div class="col-6"><img class="imagen" src="../../assets/whatsapp.png" alt="Icono de whatsapp"><span>12345678</span></div>
-                    <div class="col-6"><img class="imagen" src="../../assets/gmail.png" alt="Icono de email"><span>unemail@gmail.com</span></div>
+                      <div class="col-12 col-sm-6"><p><span class="fw-bold">Nombre: </span> Javier Irungaray</p></div>
+                      <div class="col-12 col-sm-6"><img class="imagen" src="../../assets/telefono.png" alt="Icono de teléfono"><span>45123678</span></div>
+                    <div class="col-12  col-sm-6"><img class="imagen" src="../../assets/whatsapp.png" alt="Icono de whatsapp"><span>12345678</span></div>
+                    <div class="col-12  col-sm-6"><img class="imagen" src="../../assets/gmail.png" alt="Icono de email"><span>unemail@gmail.com</span></div>
                 </div>
         
                 <!-- Datos mascota -->
                 <div class="row">
-                    <div class="col-12"><h2 class="mt-4">Datos mascota</h2></div>
-                </div>
-                <div class="row">
-                    <div class="col-4"><p><span class="fw-bold">Especie: </span>Perro</p></div>
-                    <div class="col-4"><p><span class="fw-bold">Color princiapl: </span>Blanco</p></div>
-                    <div class="col-4"><p><span class="fw-bold">Color secundario: </span>Gris</p></div>
-                </div>
-                <div class="row">
-                    <div class="col-4"><p><span class="fw-bold">Sexo: </span>Hembra</p></div>
-                    <div class="col-4"><p><span class="fw-bold">Edad: </span>Adulto</p></div>
-                    <div class="col-4"><p><span class="fw-bold">Peso: </span>Pesado</p></div>
-                </div>
-                <div class="row">
-                    <div class="col-12"><p><span class="fw-bold">Tamaño: </span>Mediano</p></div>
-                </div>
-                <div class="row">
-                    <div class="col-12"><p><span class="fw-bold">Descripción adicional</span> Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, ipsam ullam quod, eaque autem nemo distinctio laudantium, nesciunt aperiam dolor doloribus sunt impedit minus laborum omnis similique iste illum alias!</p></div>
+                    <div class="col-lg-12"><h2 class="mt-4">Datos mascota</h2></div>
+                    <div class="col-lg-4 col-sm-6"><p><span class="fw-bold">Especie: </span>Perro</p></div>
+                    <div class="col-lg-4 col-sm-6"><p><span class="fw-bold">Color princiapl: </span>Blanco</p></div>
+                    <div class="col-lg-4 col-sm-6"><p><span class="fw-bold">Color secundario: </span>Gris</p></div>
+                    <div class="col-lg-4 col-sm-6"><p><span class="fw-bold">Sexo: </span>Hembra</p></div>
+                    <div class="col-lg-4 col-sm-6"><p><span class="fw-bold">Edad: </span>Adulto</p></div>
+                    <div class="col-lg-4 col-sm-6"><p><span class="fw-bold">Peso: </span>Pesado</p></div>
+                    <div class="col-lg-12 col-sm-10"><p><span class="fw-bold">Tamaño: </span>Mediano</p></div>
+                    <div class="col-6 col-lg-12 col-sm-10"><p><span class="fw-bold">Descripción adicional</span> Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, ipsam ullam quod, eaque autem nemo distinctio laudantium, nesciunt aperiam dolor doloribus sunt impedit minus laborum omnis similique iste illum alias!</p></div>
                 </div>
             </div>
         </div>
@@ -150,15 +137,11 @@
         <!-- Ubicacion mascota -->
         <div class="row"><h2>Ubicación de la mascota</h2></div>
         <div class="row">
-            <div class="col-6"><p><span class="fw-bold">Ciudad: </span>CABA</p></div>
+            <div class="col-3 col-sm-4"><p><span class="fw-bold">Ciudad: </span>CABA</p></div>
             <div class="col-6 botones">
-              <div class="row">
-                <div class="col-6"><button class="boton" style="background-color: var(--highligth-color);">APROBAR</button></div>
-                <div class="col-6"><button class="boton" style="background-color: var(--eliminar-color);">ELIMINAR</button></div>
-              </div>
             </div>
-            <div class="col-12"><p><span class="fw-bold">Localidad: </span>Chacarita</p></div>
-            <div class="col-12"><p><span class="fw-bold">Dirección: </span>Av. Guzmán 680</p></div>
+            <div class="col-lg-12"><p><span class="fw-bold">Localidad: </span>Chacarita</p></div>
+            <div class="col-lg-12"><p><span class="fw-bold">Dirección: </span>Av. Guzmán 680</p></div>
         </div>
 
     </main>

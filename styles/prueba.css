@@ -1,0 +1,35 @@
+.size-100 {
+    height: 80vh;
+    width: 100%;
+}
+
+.imagen {
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+}
+
+.borde {
+    border: 4px solid #7A3DFF;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+}
+
+h1 {
+    font-family: Roboto;
+    font-size: 75px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 88px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.boton {
+    width: 142px;
+    height: 49px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 90px;
+    border: none;
+}
