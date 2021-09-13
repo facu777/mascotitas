@@ -1,113 +1,371 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Características</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
-    <link rel='stylesheet' type='text/css' media='screen' href='../../styles/main.css'>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
-    <link href="../../styles/main.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
-
-    <link rel="stylesheet" href="../../styles/admin.css">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Características</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+        <link rel='stylesheet' type='text/css' media='screen' href='../../styles/main.css'>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+        <link href="../../styles/main.css" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+    
+        <link rel="stylesheet" href="../../styles/publicacion.css">
+    </head>
 <body>
     <!-- navbar -->
     <ul class="nav fondo-color-primario space-between">
-        <div class="nav-link-flex">
-          <li class="">
-            <span class="nav-link" aria-current="page" href="#"><img src="/assets/logo-bordengro.svg" alt=""></span>
-          </li>
-          <li class="">
-            <span class="nav-title" href="/main.html"><h3 class="nav-title indie-flower">Mascotitas</h3></span>
-          </li>
-        </div>
-        <div class="nav-link-flex">
-        <li class="nav-item">
-          <a href="/html/main.html">     
-             <span class="nav-link" >Inicio</span>
-          </a>
-        </li>
-        <li class="nav-item">
-          
-          <div class="dropdown">
-            <button class="btn  " type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
-              <span class="text-white"> Publicaciones</span>
-                    </button>
-            <ul class="dropdown-menu fondo-color-secundario" aria-labelledby="dropdownMenuButton1">
-              <li><a class="dropdown-item" href="#">Publicaciones de Mascota en Adopción</a></li>
-              <li><a class="dropdown-item" href="#">Publicaciones de Mascota Encontrada</a></li>
-            </ul>
-          </div>
-          
-        </li>
-        <li class="nav-item" >
-          <a href="/html/dar_en_adopcion.html">
-          <span class="nav-link" >Adoptar</span>
-    
-          </a>
-        </li>
-        <li class="nav-item">
-          <a href="#footer">
-            <span class="nav-link" >Contacto</span>
-    
-          </a>
-        </li>
-    
-        </div>
-        <div class="nav-link-flex me-2 ">
-          <div class="dropdown">
-            <button class="btn  dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-              <span class="text-white">Mi cuenta</span>
-              <img src="assets/user.svg" alt="">
-                    </button>
-            <ul class="dropdown-menu fondo-color-secundario" aria-labelledby="dropdownMenuButton1">
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
-            </ul>
-          </div>
-          
-        </div>
-    
-      </ul>
-      <!-- fin navbar -->
+                <div class="nav-link-flex">
+                  <li class="">
+                    <span class="nav-link" aria-current="page" href="#"><img src="/assets/logo-bordengro.svg" alt=""></span>
+                  </li>
+                  <li class="">
+                    <span class="nav-title" href="/main.html"><h3 class="nav-title indie-flower">Mascotitas</h3></span>
+                  </li>
+                </div>
+                <div class="nav-link-flex">
+                <li class="nav-item">
+                  <a href="/html/main.html">     
+                     <span class="nav-link" >Inicio</span>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  
+                  <div class="dropdown">
+                    <button class="btn  " type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+                      <span class="text-white"> Publicaciones</span>
+                            </button>
+                    <ul class="dropdown-menu fondo-color-secundario" aria-labelledby="dropdownMenuButton1">
+                      <li><a class="dropdown-item" href="#">Publicaciones de Mascota en Adopción</a></li>
+                      <li><a class="dropdown-item" href="#">Publicaciones de Mascota Encontrada</a></li>
+                    </ul>
+                  </div>
+                  
+                </li>
+                <li class="nav-item" >
+                  <a href="/html/dar_en_adopcion.html">
+                  <span class="nav-link" >Adoptar</span>
+            
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="#footer">
+                    <span class="nav-link" >Contacto</span>
+            
+                  </a>
+                </li>
+            
+                </div>
+                <div class="nav-link-flex me-2 ">
+                  <div class="dropdown">
+                    <button class="btn  dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                      <span class="text-white">Mi cuenta</span>
+                      <img src="assets/user.svg" alt="">
+                            </button>
+                    <ul class="dropdown-menu fondo-color-secundario" aria-labelledby="dropdownMenuButton1">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </div>
+                  
+                </div>
+            
+    </ul>
+    <!-- fin navbar -->
 
-      <main class="container">
-        <div class="row bg-primary">
-            <div class="col-12">
-                <h1 class="h1">Cuestionario de preferencias</h1>
+    <main class="container border m-2 mx-auto" style="width: 850px;">
+      <form action="../show_data.html" method="">
+        <section class="border m-2 mb-5">
+        <form action="../show_data.html" method="">
+          <div class="mb-3 ms-3 row">
+            <div class="col-2 mt-1">
+              <input type="text" class="form-control-plaintext" id="colorDePelo" value="Color de pelo">
             </div>
-        </div>
-        
-        <div class="row bg-secondary">
-            <div class="col-sm-3 col-md-2">Color de Pelo</div>
-            <div class="col-sm-1 col-md-1"><img class="size-40" src="../../assets/lapiz_y_papel.png" alt="Icono de lápiz y papel" width="40px"></div>
-            <div class="col-sm-6 col-md-8"></div>
-            <div class="col-sm-2 col-md-1"><img class="size-40" src="../../assets/tacho_basura.png" alt="Icono de un tacho de basura" width="40px"></div>
-        </div>
+            <label for="colorDePelo" class="col-1 col-form-label"><img src="../../assets/lapiz_y_papel.png" alt="Icono de papel y lápiz"></label>
+            <div class="col-8"></div>
+            <button type="submit" class="btn col-1"><img src="../../assets/tacho_basura.png" alt="Icono de tacho de basura"></button>
+          </div>
 
-        <div class="row bg-danger">
-            <div class="col-sm-4 col-md-2">Multiples opciones</div>
-            <div class="col-sm-8 col-md-10"><img class="size-40" src="../../assets/switch-on.png" alt="Icono de botón encendido"></div>
-        </div>
+          <div class="mb-3 ms-3 row">
+            <div class="col-3">
+              <input type="text" class="form-control-plaintext" id="multiplesOpciones" value="Múltiples opciones">
+            </div>
+            <div class="form-check form-switch pt-2 col-1">
+              <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+            </div>
+          </div>
 
-        <div class="row bg-secondary">
-            <div class="col-1">Choice</div>
-            <div class="col-1"><img class="size-40" src="../../assets/switch-on.png" alt="Icono de botón encendido"></div>
-            <div class="col-10">Checkbox</div>
-        </div>
+          <div class="mb-3 ms-3 row">
+            <div class="col-2 mt-3">
+              <input type="text" class="form-control-plaintext" id="multiplesOpciones" value="Choice">
+            </div>
+            <div class="form-check form-switch pt-4 col-1 me-4">
+              <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked>
+            </div>
+            <div class="col-2 mt-3">
+              <input type="text" class="form-control-plaintext" id="multiplesOpciones" value="Checkbox">
+            </div>
+          </div>
 
-        <div class="row bg-danger">
+          <div class="mb-3 ms-3 row">
             <div class="col-5">
-                
+              <input class="form-control" type="text" placeholder="Opción 1" aria-label="default input example">
             </div>
-            <div class="col-1"><img class="size-40" src="../../assets/minus.png" alt="Icono de quitar"></div>
+            <div class="col-1">
+              <button type="submit" class="btn h-50 align-top"><img class="h-100" src="../../assets/minus.png" alt="Icono de quitar"></button>
+            </div>
+            <div class="col-5">
+              <input class="form-control" type="text" placeholder="Opción 2" aria-label="default input example">
+            </div>
+            <div class="col-1">
+              <button type="submit" class="btn h-50 align-top"><img class="h-100" src="../../assets/minus.png" alt="Icono de quitar"></button>
+            </div>
+            <div class="col-5">
+              <input class="form-control" type="text" placeholder="Opción 3" aria-label="default input example">
+            </div>
+            <div class="col-1">
+              <button type="submit" class="btn h-50 align-top"><img class="h-100" src="../../assets/minus.png" alt="Icono de quitar"></button>
+            </div>
+            <div class="col-5">
+              <input class="form-control" type="text" placeholder="Opción 4" aria-label="default input example">
+            </div>
+            <div class="col-1">
+              <button type="submit" class="btn h-50 align-top"><img class="h-100" src="../../assets/minus.png" alt="Icono de quitar"></button>
+            </div>
+
+            <div class="row">
+              <div class="col-11"></div>
+              <button type="submit" class="btn h-75 align-top col-1"><img class="h-100" src="../../assets/plus.png" alt="Icono de quitar"></button>
+            </div>
+
+            <div class="mb-3 ms-3 row">
+              <div class="col-2">
+                <input type="text" class="form-control-plaintext" id="RespuestaLibre" value="Respuesta libre">
+              </div>
+              <div class="form-check form-switch pt-2 col-1">
+                <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-9"></div>
+              <div class="col-1">
+                <button class="boton" style="background-color: var(--highligth-color);">LISTO</button>
+              </div>
+            </div>
+        </form>
+      </section>
+
+      <section class="border m-2 mb-5">
+        <form action="../show_data.html" method="">
+          <div class="mb-3 ms-3 row">
+            <div class="col-2 mt-1">
+              <input type="text" class="form-control-plaintext" id="colorDePelo" value="Color de pelo">
+            </div>
+            <label for="colorDePelo" class="col-1 col-form-label"><img src="../../assets/lapiz_y_papel.png" alt="Icono de papel y lápiz"></label>
+            <div class="col-8"></div>
+            <button type="submit" class="btn col-1"><img src="../../assets/tacho_basura.png" alt="Icono de tacho de basura"></button>
+          </div>
+
+          <div class="mb-3 ms-3 row">
+            <div class="col-3">
+              <input type="text" class="form-control-plaintext" id="multiplesOpciones" value="Múltiples opciones">
+            </div>
+            <div class="form-check form-switch pt-2 col-1">
+              <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+            </div>
+          </div>
+
+          <div class="mb-3 ms-3 row">
+            <div class="col-2 mt-3">
+              <input type="text" class="form-control-plaintext" id="multiplesOpciones" value="Choice">
+            </div>
+            <div class="form-check form-switch pt-4 col-1 me-4">
+              <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked>
+            </div>
+            <div class="col-2 mt-3">
+              <input type="text" class="form-control-plaintext" id="multiplesOpciones" value="Checkbox">
+            </div>
+          </div>
+
+          <div class="mb-3 ms-3 row">
+            <div class="col-5">
+              <input class="form-control" type="text" placeholder="Opción 1" aria-label="default input example">
+            </div>
+            <div class="col-1">
+              <button type="submit" class="btn h-50 align-top"><img class="h-100" src="../../assets/minus.png" alt="Icono de quitar"></button>
+            </div>
+            <div class="col-5">
+              <input class="form-control" type="text" placeholder="Opción 2" aria-label="default input example">
+            </div>
+            <div class="col-1">
+              <button type="submit" class="btn h-50 align-top"><img class="h-100" src="../../assets/minus.png" alt="Icono de quitar"></button>
+            </div>
+            <div class="col-5">
+              <input class="form-control" type="text" placeholder="Opción 3" aria-label="default input example">
+            </div>
+            <div class="col-1">
+              <button type="submit" class="btn h-50 align-top"><img class="h-100" src="../../assets/minus.png" alt="Icono de quitar"></button>
+            </div>
+            <div class="col-5">
+              <input class="form-control" type="text" placeholder="Opción 4" aria-label="default input example">
+            </div>
+            <div class="col-1">
+              <button type="submit" class="btn h-50 align-top"><img class="h-100" src="../../assets/minus.png" alt="Icono de quitar"></button>
+            </div>
+
+            <div class="row">
+              <div class="col-11"></div>
+              <button type="submit" class="btn h-75 align-top col-1"><img class="h-100" src="../../assets/plus.png" alt="Icono de quitar"></button>
+            </div>
+
+            <div class="mb-3 ms-3 row">
+              <div class="col-2">
+                <input type="text" class="form-control-plaintext" id="RespuestaLibre" value="Respuesta libre">
+              </div>
+              <div class="form-check form-switch pt-2 col-1">
+                <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+              </div>
+            </div>
+
+            <div class="row">
+              <input type="password" class="form-control col" id="inputPassword" placeholder="Input">
+            </div>
+
+            <div class="row mt-5 mb-3">
+              <div class="col-9"></div>
+              <div class="col-1">
+                <button class="boton" style="background-color: var(--highligth-color);">LISTO</button>
+              </div>
+            </div>
+        </form>
+      </section>
+      
+      <div class="row">
+        <div class="col-10"></div>
+        <button class="boton col-1" style="background-color: var(--highligth-color);">LISTO</button>
+      </div>
+        
+      <div class="row">
+        <div class="col-6"></div>
+        <button type="submit" class="btn h-75 align-top col-1"><img class="h-100" src="../../assets/plus.png" alt="Icono de quitar"></button>
+      </div>
+        
+      </form>
+    </main>
+
+    <!-- Footer -->
+    <footer class="text-center text-lg-start bg-light ">
+
+      <!-- Section: Links  -->
+      <section class="fondo-color-secundario-footer pt-2">
+        <div class="container text-center text-md-start ">
+          <!-- Grid row -->
+          <div class="row mt-3">
+            <!-- Grid column -->
+            <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4 flex-logo-footer">
+              <!-- Content -->
+              <h4 class=" fw-bold mb-4 indie-flower ">
+                <img src="/assets/logo-bordengro.svg" href height="80em" width="120em" alt="Logo footer">
+                Mascotitas
+              </h4>
+    
+            </div>
+            <!-- Grid column -->        
+            <!-- Grid column -->
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+              <!-- Links -->
+              <h6 class="text-uppercase fw-bold mb-4">
+                Sobre Nosotros.
+              </h6>
+              <p>
+                <a href="#!" class="text-decoration-none">Quienes somos nosotros</a>
+              </p>
+              <p>
+                <a href="#!" class="text-decoration-none">Como surgió patitas</a>
+              </p>
+    
+              <p>
+                <a href="#!" class="text-decoration-none">Preguntas Frecuentes</a>
+    
+              </p>
+    
+            </div>
+            
+    
+            <!-- Grid column -->
+            <!-- Grid column -->
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+              <!-- Links -->
+              <h6 class="text-uppercase fw-bold mb-4">
+                Consejos de adopción
+              </h6>
+              <p>
+                <a href="#!" class="text-decoration-none">Adopción de perros</a>
+              </p>
+              <p>
+                <a href="#!" class="text-decoration-none">Adopción de gatos</a>
+              </p>
+              <p>
+    
+            </div>
+            <!-- Grid column -->
+    
+            <!-- Grid column -->
+            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4 fondo">
+              <!-- Links -->
+              <h6 class="text-uppercase fw-bold mb-4">
+                Comenzar
+              </h6>
+              <p>
+                <a href="#!" class="text-decoration-none">Iniciar Sesion</a>
+              </p>
+              <p>
+                <a href="#!" class="text-decoration-none">Registrate</a>
+              </p>
+            </div>
+            <!-- Grid column -->
+    
+            <!-- Grid column -->
+            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+              <!-- Links -->
+              <h6 class="text-uppercase fw-bold mb-4">
+                Siguenos
+              </h6>
+              <p class="text-uppercase">
+                <img class="logo-tamanio"  src="/assets/facebook-1.svg" alt="Facebook">
+                Facebook    
+              </p>
+              <p class="text-uppercase">
+                <img class="logo-tamanio"  src="/assets/Instagram-logo.svg" alt="Instagram"> 
+                Instagram
+              </p>
+              <p class="text-uppercase">
+                <img class="logo-tamanio" src="/assets/Twitter-logo.svg" alt="Twitter">
+                Twitter
+              </p>
+              <p class="text-uppercase">
+                <img class="youtube-logo-scala"  src="/assets/youtube-1.svg" alt="Youtube">
+                Youtube
+              </p>
+            </div>
+            <!-- Grid column -->
+          </div>
+          <!-- Grid row -->
         </div>
-      </main>
-</body>
-</html>
+      </section>
+      <!-- Section: Links  -->
+    
+      <!-- Copyright -->
+      <div class="text-center p-2 fondo-color-secundario-footer" id="footer">
+        © 2021 Copyright | Mascotitas SRL - Todos lo derechos registrador
+      </div>
+    
+      <!-- Copyright -->
+    </footer>
+    <!-- Fin footer -->
+  </body>
+  </html>
