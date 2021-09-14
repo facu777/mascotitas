@@ -1,0 +1,59 @@
+h1 {
+    position: ;
+    width: 652px;
+    height: 84px;
+    left: 325px;
+    top: 159px;
+    
+    font-family: Indie Flower;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 50px;
+    line-height: 95px;
+    /* or 191% */
+    
+    display: flex;
+    align-items: center;
+    letter-spacing: -0.005em;
+}
+
+input[type="text"] {
+    /* height: 29px; */
+    /* left: 35px; */
+    /* top: 27px; */
+    
+    /* Headline */
+    
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.6rem;
+    line-height: 29px;
+    display: flex;
+    align-items: center;
+}
+
+#en_cm {
+    font-weight: 600;
+    font-size: 0.5em;
+}
+
+.con_borde {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.m-25pc {
+    margin-left: 25%;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.m-75pc {
+    margin-left: 25%;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
