@@ -85,19 +85,13 @@
                 </select>
                 <label for="tamaño_mascota">Tamaño</label>
             </div>
-            <div class=""><p>Sexo</p>
-                <div class="form-check">
-                    <input name="sexo" class="form-check-input" type="radio" value="Femenino"/>
-                    <label class="form-check-label" for="sexo">
-                        Femenino
-                    </label>
-                </div>
-                <div class="form-check">
-                    <input name="sexo" class="form-check-input" type="radio" value="Masculino"/>
-                    <label class="form-check-label" for="sexo">
-                        Masculino
-                    </label>
-                </div>
+            <div class="form-floating">
+                <select id="sexo_mascota" class="form-select input">
+                    <option selected>Sexo</option>
+                    <option value="Femenino">Femenino</option>
+                    <option value="Masculino">Masculino</option>
+                </select>
+                <label for="sexo_mascota">Sexo</label>
             </div>
             <div class="form-floating">
                 <textarea name="descripcion" class="form-control input" placeholder="Describa su mascota"></textarea>
@@ -119,12 +113,12 @@
                 <label for="apellido">Fecha de nacimiento</label>
             </div>
             <div class="form-floating">
-                <select class="form-select input" id="sexo_usuario">
-                    <option selected class="">Sexo</option>
+                <select id="sexo_mascota" class="form-select input">
+                    <option selected>Sexo</option>
                     <option value="Femenino">Femenino</option>
                     <option value="Masculino">Masculino</option>
                 </select>
-                <label for="sexo_usuario">Sexo</label>
+                <label for="sexo_mascota">Sexo</label>
             </div>
             <div class="form-floating">
                 <select id="dni" class="form-select input">
@@ -161,25 +155,56 @@
         <div class="tab">
             <p class="indie-flower fs-2 top-padding">Contactos</p>
             <p class="indie-flower fs-6">Debe tener al menos 1 contacto</p>
-            <fieldset class="wd">
-                <legend>Contacto 1</legend>
+            <fieldset>
+                <legend class="indie-flower fs-4 fw-500" >Contacto #1</legend>
                 <div class="form-floating">
-                    <input name="Nombre" class="form-control input" type="text" required/>
+                    <input name="Nombre" class="form-control input" type="text" placeholder="Algo" required/>
                     <label for="Nombre">Nombre</label>
                 </div>
                 <div class="form-floating">
-                    <input name="Apellido" class="form-control input" type="text" required/>
+                    <input name="Apellido" class="form-control input" type="text" placeholder="Algo" required/>
                     <label for="Apellido">Apellido</label>
                 </div>
-                <div class="form-floating">
-                    <input name="Telefono" class="form-control input" type="text" required/>
-                    <label for="Telefono">Telefono</label>
+                <div class="input-group">
+                    <select class="form-select input" id="sexo_usuario" style="height: min-content;">
+                        <option selected class="">Cod.Pais</option>
+                        <option value="Femenino">(+54)</option>
+                    </select>
+                    <div class="form-floating">
+                        <input name="Telefono" class="form-control input" type="text" placeholder="Telefono" required/>
+                        <label for="Telefono top-padding">Telefono</label>
+                    </div>
                 </div>
                 <div class="form-floating">
-                    <input name="Email" class="form-control input" type="text" required/>
+                    <input name="Email" class="form-control input" type="text" placeholder="Algo" required/>
                     <label for="Email">Email</label>
                 </div>
+                <div class="col-flex">
+                    <p>Medios de notificacion activos:</p>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                        <label class="form-check-label" for="defaultCheck1">
+                            WhatsApp
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                        <label class="form-check-label" for="defaultCheck1">
+                            Email
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                        <label class="form-check-label" for="defaultCheck1">
+                            SMS
+                        </label>
+                      </div>
+                </div>
             </fieldset>
+
+            <button class="button btn-hightlight bg-white text-uppercase fw-500 mb-lg-5 btn-add" id="moreContact">
+                Agregar otro contacto
+            </button>
         </div>   
 
         
