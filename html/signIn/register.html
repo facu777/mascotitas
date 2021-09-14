@@ -50,34 +50,41 @@
     </ul>
 
     <form class="frame" id="regForm">
-        <div class="tab"><p class="indie-flower fs-2 top-padding">Registra a tu mascota</p>
-            <div class="input-wrap">
-                <input name="nombre" class="form-control input top-padding" type="text" required/>
-                <label class="floating-label">Nombre</label>
+        <div class="tab">
+            <p class="indie-flower fs-2 top-padding">Registra a tu mascota</p>
+            <div class="form-floating ">
+                <input name="nombre" class="form-control input" type="text" placeholder="Nombre" required/>
+                <label for="nombre">Nombre</label>
             </div>
-            <div class="input-wrap">
-                <input name="nombre" class="form-control input top-padding" type="text" required/>
-                <label class="floating-label">Apodo</label>
+            <div class="form-floating">
+                <input name="apodo" class="form-control input" type="text" placeholder="Apodo" required/>
+                <label>Apodo</label>
             </div>
-            <select class="form-select input">
-                <option selected>Especie</option>
-                <option value="Gato">Gato</option>
-                <option value="Perro">Perro</option>
-            </select>
-            <div class="input-wrap">
-                <input name="edad" class="form-control input top-padding" required/>
-                <label for="edad" class="floating-label">Edad aproximada</label>
+            <div class="form-floating">
+                <select id="especie_mascota" class="form-select input">
+                    <option selected>Especie</option>
+                    <option value="Gato">Gato</option>
+                    <option value="Perro">Perro</option>
+                </select>
+                <label for="especie_mascota">Especie</label>
             </div>
-            <div class="input-wrap">
-                <input name="peso" class="form-control input top-padding" type="text" required/>
-                <label for="peso" class="floating-label">Peso</label>
+            <div class="form-floating">
+                <input name="edad" class="form-control input" placeholder="Edad aproximada" required/>
+                <label for="edad">Edad aproximada</label>
             </div>
-            <select class="form-select input">
-                <option selected>Tamaño</option>
-                <option value="Pequeño">Pequeño</option>
-                <option value="Mediano">Mediano</option>
-                <option value="Grande">Grande</option>
-            </select>
+            <div class="form-floating">
+                <input name="peso" class="form-control input" type="text" placeholder="Peso" required/>
+                <label for="peso">Peso</label>
+            </div>
+            <div class="form-floating">
+                <select id="tamaño_mascota" class="form-select input">
+                    <option selected>Tamaño</option>
+                    <option value="Pequeño">Pequeño</option>
+                    <option value="Mediano">Mediano</option>
+                    <option value="Grande">Grande</option>
+                </select>
+                <label for="tamaño_mascota">Tamaño</label>
+            </div>
             <div class=""><p>Sexo</p>
                 <div class="form-check">
                     <input name="sexo" class="form-check-input" type="radio" value="Femenino"/>
@@ -92,29 +99,87 @@
                     </label>
                 </div>
             </div>
-            <div class="">
-                <label for="descripcion" class="floating-label">Descripcion</label>
-                <textarea name="descripcion" class="form-control input"></textarea>
+            <div class="form-floating">
+                <textarea name="descripcion" class="form-control input" placeholder="Describa su mascota"></textarea>
+                <label for="descripcion">Descripcion</label>
+            </div>  
+        </div>
+
+        <div class="tab"><p class="indie-flower fs-2 top-padding">Ingresa tus datos</p>
+            <div class="form-floating">
+                <input name="nombre" class="form-control input" type="text" placeholder="Nombre" required/>
+                <label for="nombre">Nombre</label>
             </div>
-            
+            <div class="form-floating">
+                <input name="apellido" class="form-control input" type="text" placeholder="Apellido" required/>
+                <label for="apellido">Apellido</label>
+            </div>
+            <div class="form-floating">
+                <input name="nacimiento" placeholder="Fecha de nacimiento" onfocus="(this.type='date')" class="form-control input" type="text" required/>
+                <label for="apellido">Fecha de nacimiento</label>
+            </div>
+            <div class="form-floating">
+                <select class="form-select input" id="sexo_usuario">
+                    <option selected class="">Sexo</option>
+                    <option value="Femenino">Femenino</option>
+                    <option value="Masculino">Masculino</option>
+                </select>
+                <label for="sexo_usuario">Sexo</label>
+            </div>
+            <div class="form-floating">
+                <select id="dni" class="form-select input">
+                    <option selected class="input">Tipo de documento</option>
+                    <option value="DNI">DNI</option>
+                    <option value="CUIL">CUIL</option>
+                </select>
+                <label for="dni">Tipo de documento</label>
+            </div>
+            <div class="form-floating">
+                <input name="nro_doc" class="form-control input" type="text" placeholder="Número de documento" required/>
+                <label for="nro_doc">Número de documento</label>
+            </div>
+            <div class="form-floating">
+                <input class="form-control input" list="provincias" id="provinciasDataList" placeholder="Provincia" required/>
+                <label for="provinciasDataList">Provincia</label>
+                <datalist id="provincias">
+                    <option class="">Provincia</option>
+                    <option class="">Provincia</option>
+                    <option class="">Provincia</option>
+                </datalist>
+            </div>  
+            <div class="form-floating">
+                <input class="form-control input" list="localidad" id="localidadDataList" placeholder="Localidad" required/>
+                <label for="localidadDataList">Localidad</label>
+                <datalist id="localidad">
+                    <option class="">Localidad</option>
+                    <option class="">Localidad</option>
+                    <option class="">Localidad</option>
+                </datalist>
+            </div>
         </div>
-        <div class="tab"><p class="indie-flower fs-2">Ingresa tus datos</p>
-            <input placeholder="First name" class="form-control input"/>
-            <input placeholder="Last name" class="form-control input"/>
-            <input placeholder="First name" class="form-control input"/>
-            <input placeholder="Last name" class="form-control input"/>
-            <input placeholder="First name" class="form-control input"/>
-            <input placeholder="Last name" class="form-control input"/>
-            <input placeholder="First name" class="form-control input"/>
-            <input placeholder="Last name" class="form-control input"/>
-        </div>
-        <div class="tab">Datos contactos
-            
-            <input placeholder="First name" class="form-control input">
-            <input placeholder="Last name" class="form-control input">
-            <input placeholder="First name" class="form-control input">
-            <input placeholder="Last name" class="form-control input">
-            <input placeholder="Last name" class="form-control input">
+
+        <div class="tab">
+            <p class="indie-flower fs-2 top-padding">Contactos</p>
+            <p class="indie-flower fs-6">Debe tener al menos 1 contacto</p>
+            <fieldset class="wd">
+                <legend>Contacto 1</legend>
+                <div class="form-floating">
+                    <input name="Nombre" class="form-control input" type="text" required/>
+                    <label for="Nombre">Nombre</label>
+                </div>
+                <div class="form-floating">
+                    <input name="Apellido" class="form-control input" type="text" required/>
+                    <label for="Apellido">Apellido</label>
+                </div>
+                <div class="form-floating">
+                    <input name="Telefono" class="form-control input" type="text" required/>
+                    <label for="Telefono">Telefono</label>
+                </div>
+                <div class="form-floating">
+                    <input name="Email" class="form-control input" type="text" required/>
+                    <label for="Email">Email</label>
+                </div>
+            </fieldset>
         </div>   
 
         
@@ -122,7 +187,7 @@
             <button class="button btn-secondary fondo-color-secundario text-uppercase fw-500 text-decoration-none " id="prevBtn" onclick="nextPrev(-1)">
                 Previous
             </button>
-            <button class="button btn-hightlight fondo-color-highlight text-uppercase fw-500" id="nextBtn" onclick="nextPrev(1)">
+            <button class="button btn-hightlight fondo-color-hightlight text-uppercase fw-500" id="nextBtn" onclick="nextPrev(1)">
                 Next
             </button>
         </div>

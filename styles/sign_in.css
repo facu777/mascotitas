@@ -67,7 +67,26 @@
     border: 1px solid #000000;
     border-radius: 15px;
     margin-bottom: 1rem;
-    min-height: 50px;
+    color: gray;
+}
+label{
+    color: gray;
+}
+
+select option:checked,
+select option:hover {
+    background-color: var(--primary-color);
+    color: #FFFFFF;
+    font-weight: 600;
+}
+input[type="date"]{
+    color: #bbbbbb;
+    font-size: 15px;
+    background: calc(100% - 10px) 50% no-repeat url(/assets/calendar.svg);
+    background-size: 30px 30px;
+}
+input[type="date"]::-webkit-calendar-picker-indicator{
+    opacity: 0;
 }
 
 .top-padding{
@@ -78,15 +97,13 @@
 	position: relative;
 	width: 100%;
 }
-.input-wrap .input{
-	width: 100%;
-}
+
 .input-wrap .floating-label {
 	position: absolute;
 	pointer-events: none;
 	top: 30%;
 	left: 10px;
-	transition: 0.2s ease all;
+    transition: 0.2s ease all;
 }
 .input-wrap input:focus ~ .floating-label,
 .input-wrap input:not(:focus):valid ~ .floating-label{
@@ -94,6 +111,11 @@
 	left: 10px;
 	font-size: 11px;
 }
+
+fieldset{
+    border: 1px solid red;
+}
+
 
 .row-flex{
     width: 100%;
@@ -103,7 +125,9 @@
 }
 #prevBtn {
     width: 25%;
+    min-width: 100px;
 }
 #nextBtn{
     width: 25%;
+    min-width: 100px;
 }
