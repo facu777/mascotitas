@@ -1,0 +1,24 @@
+{
+  "name": "mascotitas",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build":  "purgecss --css sass/custom.css --content html/administrador/caracteristicas_generales.html -o styles/custom.css",
+    "build2": "purgecss --css sass/custom.css --content html/administrador/parametros_generales.html -o styles/custom2.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/facu777/mascotitas.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/facu777/mascotitas/issues"
+  },
+  "homepage": "https://github.com/facu777/mascotitas#readme",
+  "dependencies": {
+    "bootstrap": "^5.0.0-beta3"
+  }
+}
