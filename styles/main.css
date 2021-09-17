@@ -34,6 +34,9 @@ a:hover {
     color: white;
     
 }
+.fondo-color-hightlight{
+    background-color: var(--highligth-color);
+}
 .fondo-color-secundario-footer{
     background-color: var(--second-secondary-color);
     

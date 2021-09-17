@@ -1,0 +1,171 @@
+.frame {
+    width: 30vw;
+    min-height: 50vh;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+    margin: 5rem auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    padding: 0px;
+    min-width: 400px;
+}
+
+.button{
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 90px;
+    width: 60% ;
+    transition-duration: 0.4s;
+    padding: 0.5rem 0;
+}
+.button:hover{
+    background-color: white;
+    cursor: pointer;
+}
+.btn-hightlight:hover {
+    border: 3px solid var(--highligth-color);
+}
+.btn-secondary:hover {
+    border: 3px solid var(--secondary-color);
+}
+
+.fw-500 {
+    font-weight: 500;
+}
+
+.fs-7 {
+    font-size: 13px;
+}
+
+.tab{
+    display: none;
+    width: 80%;
+}
+
+.step {
+    height: 15px;
+    width: 15px;
+    margin: 0 2rem;
+    background-color: #bbbbbb;
+    border: none;
+    border-radius: 50%;
+    display: inline-block;
+    opacity: 0.3;
+}
+.step.active {
+    opacity: 1;
+}
+.step.finish {
+    background-color: var(--primary-color);
+}
+
+.input {
+    width: 100%;
+    font-size: 15px;
+    border: 1px solid #000000;
+    border-radius: 15px;
+    margin-bottom: 1rem;
+    color: gray;
+}
+label{
+    color: gray;
+}
+
+select option:checked,
+select option:hover {
+    background-color: var(--primary-color);
+    color: #FFFFFF;
+    font-weight: 600;
+}
+input[type="date"]{
+    color: #bbbbbb;
+    font-size: 15px;
+    background: calc(100% - 10px) 50% no-repeat url(/assets/calendar.svg);
+    background-size: 30px 30px;
+}
+input[type="date"]::-webkit-calendar-picker-indicator{
+    opacity: 0;
+}
+
+.top-padding{
+    padding-top: 20px;
+}
+
+div.input-group select{
+    max-width: 25%;
+    min-height: 50px;
+    left: -3%;
+}
+div.input-group select + div.form-floating{
+    left: -10%;
+}
+div.input-group select + div.form-floating input{
+    border-bottom-left-radius: 0px;
+    border-top-left-radius: 0px;
+    width: 100%;
+}
+div.input-group select + div.form-floating input + label{
+    margin-top: 1rem;
+    left: -1%;
+}
+
+fieldset{
+    margin-bottom: 1em;
+    border: 2px solid var(--secondary-color);
+    border-radius: 10px;
+    position: relative;
+}
+
+fieldset legend {
+    position: absolute;
+    top: 0;
+    left: 5%;
+    line-height: 1;
+    margin: -0.5rem 0;
+    background: #fff;
+    width: fit-content;
+    padding: 0 0.5rem;
+}
+
+fieldset div .input {
+    width: 80%;
+    margin: 1rem auto;
+    max-height: 50px;
+}
+fieldset > div:first-of-type {
+    margin-top: 2rem;
+}
+fieldset > div:last-child {
+    margin-bottom: 2rem;
+}
+
+fieldset div .input + label{
+    left: 10%;
+    top: -5%;
+}
+
+.row-flex{
+    width: 100%;
+    display: flex;
+    align-self: center;
+    justify-content: center;
+}
+.col-flex{
+    position: relative;
+    left: 10%;
+}
+
+div.form-check{
+    position: relative;
+    left: 5%;
+}
+#prevBtn {
+    width: 25%;
+    min-width: 100px;
+}
+#nextBtn{
+    width: 25%;
+    min-width: 100px;
+}
